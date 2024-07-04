@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Bebas_Neue } from "next/font/google";
+import { Inter, Bebas_Neue, Covered_By_Your_Grace } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -7,6 +7,11 @@ const bebas = Bebas_Neue({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-bebas-neue",
+});
+const covered = Covered_By_Your_Grace({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-covered-by-your-grace",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +26,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${bebas.variable}`}>{children}</body>
+      <body
+        className={`${inter.className} ${bebas.variable} ${covered.variable}`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

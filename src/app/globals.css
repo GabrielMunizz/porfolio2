@@ -35,3 +35,7 @@ body {
 .bebas {
   font-family: var(--font-bebas-neue);
 }
+
+.covered {
+  font-family: var(--font-covered-by-your-grace);
+}
