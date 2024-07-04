@@ -1,12 +1,12 @@
-import Tab from "./Tab";
+import FlipTab from "./FlipTab";
 
 export default function NavBar() {
   return (
-    <nav className="absolute flex justify-center items-center w-1/3 border-4 border-sky-500 mt-4 min-h-16">
+    <nav className="flex justify-center items-center w-1/3 border-2 border-white mt-4 min-h-16 rounded-lg">
       <ul className="flex flex-row justify-around min-w-full">
-        <Tab>Home</Tab>
-        <Tab>Projects</Tab>
-        <Tab>Contact-me</Tab>
+        <FlipTab>Home</FlipTab>
+        <FlipTab>Projects</FlipTab>
+        <FlipTab>Contact-me</FlipTab>
       </ul>
     </nav>
   );
