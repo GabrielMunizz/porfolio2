@@ -31,3 +31,7 @@ body {
     text-wrap: balance;
   }
 }
+
+.bebas {
+  font-family: var(--font-bebas-neue);
+}

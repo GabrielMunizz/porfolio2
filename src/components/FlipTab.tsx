@@ -22,7 +22,7 @@ export default function FlipTab({ children }: TabProps) {
     <motion.li
       initial="initial"
       whileHover="hovered"
-      className="relative block overflow-hidden whitespace-nowrap uppercase sm:text-5xl md:text8xl lg:9xl hover:cursor-pointer"
+      className="relative block bebas overflow-hidden whitespace-nowrap uppercase mt-2 sm:text-7xl md:text8xl lg:9xl hover:cursor-pointer"
       style={{
         lineHeight: 0.85,
       }}
