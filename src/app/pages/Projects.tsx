@@ -1,26 +1,71 @@
+"use client";
+import LinkRender from "@/components/LinkRender";
 import ProjectDescription from "@/components/ProjectDescription";
-import ProjectTitle from "@/components/ProjectTitle";
 import Title from "@/components/Title";
 import { projects } from "@/utils/projects";
 import Image from "next/image";
+import { useState } from "react";
+import Container from "@/components/Container";
+import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
+import ProjectButton from "@/components/ProjectButton";
+import { motion, AnimatePresence } from "framer-motion";
+import ProjectTitle from "@/components/ProjectTitle";
 
 export default function Projects() {
+  const [projNumber, setProjNumber] = useState(0);
+
+  const handleIndex = (direction: string) => {
+    setProjNumber((prev) => {
+      if (direction === "next") {
+        return prev === projects.length - 1 ? 0 : prev + 1;
+      }
+      return prev === 0 ? projects.length - 1 : prev - 1;
+    });
+  };
+
   return (
-    <div className="flex flex-col justify-center items-center min-w-full min-h-[100vh]">
-      <div className="flex flex-row justify-around items-start border-2 border-white w-[80%] h-[85vh] mt-[9vh] rounded-lg">
+    <Container>
+      <AnimatePresence>
         <div className="flex flex-col justify-around w-[40%]">
-          <Title>Projects</Title>
-          <div className="flex flex-col justify-center items-start p-[1rem] py-[10rem]">
-            <ProjectTitle>{projects[0].title}</ProjectTitle>
+          <div className="flex flex-row justify-between">
+            <ProjectButton handleIndex={handleIndex} direction="previous">
+              <MdNavigateBefore />
+            </ProjectButton>
+            <ProjectTitle>{projects[projNumber].title}</ProjectTitle>
+            <ProjectButton handleIndex={handleIndex} direction="next">
+              <MdNavigateNext />
+            </ProjectButton>
+          </div>
+          <div className="flex flex-col justify-center items-start h-[45rem] p-[1rem] py-[8rem]">
             <ProjectDescription>
-              {projects[0].descriptionEng}
+              {projects[projNumber].descriptionEng}
             </ProjectDescription>
+            <LinkRender category="Deploy">
+              {projects[projNumber].deploy}
+            </LinkRender>
+            <LinkRender category="GitHub">
+              {projects[projNumber].url}
+            </LinkRender>
           </div>
         </div>
         <div className="flex flex-col justify-center items-center w-[50%] h-[80%] my-[auto]">
-          <Image src={projects[0].image} alt={projects[0].title} />
+          <motion.div
+            className="overflow-hidden relative w-[90%] h-[60%] rounded-md"
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 100, opacity: 0 }}
+            key={projNumber}
+          >
+            <Image
+              id="projectImage"
+              fill
+              style={{ objectFit: "cover" }}
+              src={projects[projNumber].image}
+              alt={projects[projNumber].title}
+            />
+          </motion.div>
         </div>
-      </div>
-    </div>
+      </AnimatePresence>
+    </Container>
   );
 }

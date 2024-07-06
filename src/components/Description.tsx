@@ -3,7 +3,7 @@ export default function Description() {
     <div className="w-[100%] mb-[2rem]">
       <h2 className="bebas text-[3rem] h-[4rem]">Gabriel Muniz</h2>
       <h3 className="text-[1.5rem] italic mt-[-0.5rem]">
-        Desenvolvedor Full-Stack
+        Desenvolvedor Full Stack
       </h3>
       <p className="mt-[2rem]">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
