@@ -1,12 +1,12 @@
-"use client";
-
 import { motion } from "framer-motion";
+import { MutableRefObject } from "react";
 
 type TabProps = {
   children: string;
+  targetRef: MutableRefObject<HTMLDivElement | null>;
 };
 
-export default function FlipTab({ children }: TabProps) {
+export default function FlipTab({ children, targetRef }: TabProps) {
   const variant1 = {
     initial: { y: 0 },
     hovered: { y: "-100%" },
@@ -25,6 +25,11 @@ export default function FlipTab({ children }: TabProps) {
       className="relative block bebas overflow-hidden whitespace-nowrap uppercase mt-2 sm:text-7xl md:text8xl lg:9xl hover:cursor-pointer"
       style={{
         lineHeight: 0.85,
+      }}
+      onClick={() => {
+        targetRef.current?.scrollIntoView({
+          behavior: "smooth",
+        });
       }}
     >
       <div>

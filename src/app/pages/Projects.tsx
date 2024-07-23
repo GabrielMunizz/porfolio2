@@ -4,14 +4,16 @@ import ProjectDescription from "@/components/ProjectDescription";
 import Title from "@/components/Title";
 import { projects } from "@/utils/projects";
 import Image from "next/image";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Container from "@/components/Container";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import ProjectButton from "@/components/ProjectButton";
 import { motion, AnimatePresence } from "framer-motion";
 import ProjectTitle from "@/components/ProjectTitle";
+import PorfolioContext from "../context/PortfolioContext";
 
 export default function Projects() {
+  const { projectsRef } = useContext(PorfolioContext);
   const [projNumber, setProjNumber] = useState(0);
 
   const handleIndex = (direction: string) => {
@@ -24,7 +26,7 @@ export default function Projects() {
   };
 
   return (
-    <Container>
+    <Container containerRef={projectsRef}>
       <AnimatePresence>
         <div className="flex flex-col justify-around w-[40%]">
           <div className="flex flex-row justify-between">

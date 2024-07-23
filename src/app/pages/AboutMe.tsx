@@ -3,11 +3,14 @@ import DownloadCV from "@/components/DownloadCV";
 import Stacks from "@/components/Stacks";
 import Title from "@/components/Title";
 import Container from "@/components/Container";
+import { useContext } from "react";
+import PorfolioContext from "../context/PortfolioContext";
 // COLOCAR TEXTO DESCRITIVO E STACKS ABAIXO DE ABOUT ME
 
 export default function AboutMe() {
+  const { homeRef } = useContext(PorfolioContext);
   return (
-    <Container>
+    <Container containerRef={homeRef}>
       <div className="w-[40%] text-center">
         <Title>Image</Title>
       </div>

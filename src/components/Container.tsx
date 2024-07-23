@@ -1,10 +1,15 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { MutableRefObject, useRef } from "react";
 import { useScroll, motion } from "framer-motion";
 
-export default function Container({ children }: { children: React.ReactNode }) {
-  const containerRef = useRef<HTMLDivElement>(null);
+export default function Container({
+  children,
+  containerRef,
+}: {
+  children: React.ReactNode;
+  containerRef: React.RefObject<HTMLDivElement>;
+}) {
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start end", "start start"],
