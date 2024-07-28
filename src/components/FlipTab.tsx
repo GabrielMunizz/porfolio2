@@ -1,3 +1,4 @@
+import scrollToSection from "@/utils/scrollToSection";
 import { motion } from "framer-motion";
 import { MutableRefObject } from "react";
 
@@ -26,11 +27,7 @@ export default function FlipTab({ children, targetRef }: TabProps) {
       style={{
         lineHeight: 0.85,
       }}
-      onClick={() => {
-        targetRef.current?.scrollIntoView({
-          behavior: "smooth",
-        });
-      }}
+      onClick={() => scrollToSection(targetRef)}
     >
       <div>
         {children.split("").map((letter, i) => {

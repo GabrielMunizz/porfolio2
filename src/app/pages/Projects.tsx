@@ -28,7 +28,7 @@ export default function Projects() {
   return (
     <Container containerRef={projectsRef}>
       <AnimatePresence>
-        <div className="flex flex-col justify-around w-[40%]">
+        <div id="projects" className="flex flex-col justify-around w-[40%]">
           <div className="flex flex-row justify-between">
             <ProjectButton handleIndex={handleIndex} direction="previous">
               <MdNavigateBefore />
