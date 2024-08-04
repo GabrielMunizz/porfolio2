@@ -20,7 +20,7 @@ export default function Container({
       style={{ scale: scrollYProgress, opacity: scrollYProgress }}
       className="flex flex-col justify-center items-center min-w-full min-h-[100vh]"
     >
-      <div className="flex flex-row justify-around items-center border-2 border-white w-[80%] h-[85vh] mt-[10vh] shadow-[4px_4px_0px_white] rounded-lg">
+      <div className="flex flex-row justify-around items-center relative border-2 border-white w-[80%] h-[85vh] mt-[10vh] shadow-[4px_4px_0px_white] rounded-lg">
         {children}
       </div>
     </motion.div>

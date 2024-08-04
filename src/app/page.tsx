@@ -7,6 +7,7 @@ import Lenis from "@studio-freight/lenis";
 import { useEffect, useRef } from "react";
 import PortfolioContext from "./context/PortfolioContext";
 import ContactMe from "./pages/ContactMe";
+import useMeasure from "react-use-measure";
 
 export default function Home() {
   const homeRef = useRef<null | HTMLDivElement>(null);
@@ -23,6 +24,7 @@ export default function Home() {
     };
     requestAnimationFrame(raf);
   }, []);
+
   return (
     <PortfolioContext.Provider value={{ homeRef, projectsRef, contactMeRef }}>
       <main className="flex relative flex-col flex-center items-center justify-start min-h-screen w-full">

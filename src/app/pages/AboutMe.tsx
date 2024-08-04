@@ -11,12 +11,14 @@ export default function AboutMe() {
   const { homeRef } = useContext(PorfolioContext);
   return (
     <Container containerRef={homeRef}>
-      <div className="w-[40%] text-center">
-        <Title>Image</Title>
-      </div>
-      <div className="flex flex-col items-center w-[40%]">
+      <div className="flex flex-col items-center w-[40%] h-full">
         <Title>About Me</Title>
         <Description />
+      </div>
+      <div className="w-[40%] h-full text-center">
+        <Title>Image</Title>
+      </div>
+      <div className="flex flex-col justify-center items-center absolute w-full bottom-0">
         <Stacks />
         <DownloadCV />
       </div>
