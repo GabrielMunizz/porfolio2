@@ -26,7 +26,7 @@ export default function AboutMe() {
           alt="Gabriel's picture"
         />
       </div>
-      <div className="flex flex-col justify-center items-center absolute w-full bottom-0">
+      <div className="flex flex-col justify-center items-center absolute w-full bottom-0 z-20">
         <Stacks />
         <DownloadCV />
       </div>
