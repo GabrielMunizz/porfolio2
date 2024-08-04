@@ -9,6 +9,8 @@ export default function Stacks() {
   const SLOW_DURATION = 75;
   const [duration, setDuration] = useState(FAST_DURATION);
 
+  // useMeasure gets the width of the ref component
+
   const [ref, { width }] = useMeasure();
   const xTranslation = useMotionValue(0);
 
@@ -18,6 +20,9 @@ export default function Stacks() {
   useEffect(() => {
     let controls;
     const finalPosition = -width / 2 - 8;
+
+    // We have a change of state here, so the component will render again. This will create a glitch when hovering over the stack card.
+    // So we'll create a condition here: if hovers during the animation, finishes the animation before component renders.
 
     if (mustFinish) {
       controls = animate(xTranslation, [xTranslation.get(), finalPosition], {

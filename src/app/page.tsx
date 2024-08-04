@@ -16,6 +16,7 @@ export default function Home() {
 
   // Lenis provides a smooth scroll
   useEffect(() => {
+    window.scrollTo(0, 0);
     const lenis = new Lenis();
 
     const raf = (time: number) => {
