@@ -7,17 +7,18 @@ export default function Description() {
           Muniz
         </h1>
         <h3 className="text-[1.5rem] italic mt-[-0.5rem]">
-          Desenvolvedor Full Stack
+          Full Stack Web Developer
         </h3>
       </div>
       <p className="bebas text-[1.5rem] leading-9">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos,
-        architecto ea qui voluptatum dolorum soluta deleniti distinctio modi
-        sit, eos fuga tempore saepe enim amet provident quisquam? Eos, sit
-        explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-        repudiandae eaque architecto, maxime fugiat, ab reiciendis excepturi
-        amet numquam ea voluptatem laborum repellendus quaerat magni molestias
-        quas id vel odit!
+        Passionate about technology, music, and games, I also try my luck in the
+        kitchen on the weekends. Since I was a child, I’ve always loved games
+        and was curious about how they were made. When I studied Business
+        Administration, I wrote my graduation thesis on the marketing of video
+        games. After some time, I decided to go beyond curiosity and started
+        learning programming, eventually entering the web development field. I
+        have experience in JavaScript (React, React Native, Node, Sequelize,
+        Express) and Python (Django).
       </p>
     </div>
   );

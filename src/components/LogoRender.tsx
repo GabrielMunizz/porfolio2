@@ -30,7 +30,7 @@ export default function LogoRender({ url, title }: LogoRenderProps) {
               animate={{ y: 0 }}
               exit={{ y: 10 }}
             >
-              <span className="bebas">{title}</span>
+              <span className="bebas cursor-default">{title}</span>
             </motion.h1>
           </motion.div>
         )}

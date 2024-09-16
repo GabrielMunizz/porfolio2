@@ -47,9 +47,9 @@ export default function Stacks() {
   }, [xTranslation, width, duration, rerender, mustFinish]);
 
   return (
-    <div className="flex flex-col justify-center items-center w-full mb-[2rem]">
+    <div className="flex flex-col justify-center items-start w-[50rem] mb-[2rem]">
       <h2 className="bebas text-[3rem] text-center h-[4rem]">Stacks:</h2>
-      <div className="w-[48%] relative overflow-hidden h-[10rem]">
+      <div className="w-full relative overflow-hidden h-[10rem]">
         <motion.div
           style={{ x: xTranslation }}
           className="flex absolute left-0 gap-4"
