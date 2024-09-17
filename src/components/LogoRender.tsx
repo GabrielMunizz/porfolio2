@@ -36,9 +36,9 @@ export default function LogoRender({ url, title }: LogoRenderProps) {
         )}
       </AnimatePresence>
       <Image
-        style={{ width: "100px", minHeight: "100px" }}
         src={url}
         alt={`${title} logo`}
+        className="w-[100px] m-h-[100px]"
       />
     </motion.div>
   );

@@ -24,10 +24,9 @@ export default function Container({
         className="
           flex flex-row justify-around items-center relative
           border-2 border-white rounded-lg
-          w-[90%] sm:w-[80%] md:w-[90%] lg:w-[60%] xl:w-[95%] 2xl:w-[80%]
-          h-[75vh] sm:h-[80vh] md:h-[85vh]
-          mt-[5vh] sm:mt-[8vh] md:mt-[10vh]
-          
+          w-[90%] sm:w-[80%] md:w-[90%] lg:w-[95%] xl:w-[95%] 2xl:w-[80%]
+          h-[85vh] sm:h-[80vh] md:h-[85vh]
+          mt-[5vh] sm:mt-[8vh] md:mt-[10vh] lg:mt-[15vh]
         "
       >
         {children}
