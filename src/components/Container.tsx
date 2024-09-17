@@ -1,6 +1,6 @@
 "use client";
 
-import React, { MutableRefObject, useRef } from "react";
+import React from "react";
 import { useScroll, motion } from "framer-motion";
 
 export default function Container({
@@ -18,9 +18,18 @@ export default function Container({
     <motion.div
       ref={containerRef}
       style={{ scale: scrollYProgress, opacity: scrollYProgress }}
-      className="flex flex-col justify-center items-center min-w-full min-h-[100vh]"
+      className="flex flex-col justify-center items-center min-w-full min-h-screen"
     >
-      <div className="flex flex-row justify-around items-center relative border-2 border-white w-[80%] h-[85vh] mt-[10vh] shadow-[4px_4px_0px_white] rounded-lg">
+      <div
+        className="
+          flex flex-row justify-around items-center relative
+          border-2 border-white rounded-lg
+          w-[90%] sm:w-[80%] md:w-[90%] lg:w-[60%] xl:w-[95%] 2xl:w-[80%]
+          h-[75vh] sm:h-[80vh] md:h-[85vh]
+          mt-[5vh] sm:mt-[8vh] md:mt-[10vh]
+          
+        "
+      >
         {children}
       </div>
     </motion.div>

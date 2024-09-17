@@ -13,20 +13,20 @@ export default function AboutMe() {
   const { homeRef } = useContext(PorfolioContext);
   return (
     <Container containerRef={homeRef}>
-      <div className="flex flex-col relative items-center w-[40%] h-full z-10">
+      <div className="flex flex-col relative items-center w-full h-full z-10 md:w-[40%]">
         <Description />
-        <div className="absolute top-3 left-0 w-[30rem] h-[35rem] opacity-30 rounded-[50%] overflow-hidden z-0">
+        <div className="absolute top-16 md:top-3 md:left-0 w-[20rem] h-[20rem] md:w-[30rem] md:h-[35rem] opacity-30 rounded-[50%] overflow-hidden z-0">
           <Image className="w-full h-full" src={gridBG} alt="grid background" />
         </div>
       </div>
-      <div className="flex flex-col relative justify-start items-center w-[50%] h-full pl-[10%]">
+      <div className="hidden md:flex flex-col relative justify-start items-center w-[50%] h-full pl-[10%]">
         <Image
-          className="rounded-[25%] w-[35rem] mt-[2.5rem] z-10"
+          className="md:rounded-[50%] md:w-[15rem] md:h-[14rem] md:mt-[1.5rem] md:z-10 md:object-cover"
           src={myImage}
           alt="Gabriel's picture"
         />
       </div>
-      <div className="flex flex-col justify-center items-start absolute w-full bottom-0 pl-12 z-40">
+      <div className="flex flex-col justify-center items-start absolute w-full bottom-0 pl-12 z-40 hidden">
         <Stacks />
       </div>
     </Container>

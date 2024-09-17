@@ -23,9 +23,10 @@ export default function FlipTab({ children, targetRef }: TabProps) {
     <motion.li
       initial="initial"
       whileHover="hovered"
-      className="relative block bebas overflow-hidden whitespace-nowrap uppercase mt-2 sm:text-7xl md:text8xl lg:9xl hover:cursor-pointer"
+      whileTap="hovered"
+      className="relative block bebas overflow-hidden whitespace-nowrap uppercase mt-1 text-3xl sm:text-7xl md:text8xl md:mt-2 lg:9xl hover:cursor-pointer"
       style={{
-        lineHeight: 0.85,
+        lineHeight: 0.9,
       }}
       onClick={() => scrollToSection(targetRef)}
     >
