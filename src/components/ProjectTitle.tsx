@@ -7,7 +7,7 @@ export default function ProjectTitle({ children }: { children: string }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       key={children}
-      className="bebas text-[5rem]"
+      className="bebas text-[2rem] md:text-[3.5rem] xl:text-[5rem]"
     >
       {children}
     </motion.p>
