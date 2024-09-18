@@ -31,7 +31,7 @@ export default function Projects() {
         <AnimatePresence>
           <div
             id="projects"
-            className="flex flex-col justify-around w-[100%] h-full lg:w-[40%]"
+            className="flex flex-col justify-around w-[100%] h-full lg:w-[50%] lg:justify-start lg:mt-[2rem] 2xl:mt-0 2xl:justify-around"
           >
             <div className="flex flex-row justify-between md:justify-around">
               <ProjectButton handleIndex={handleIndex} direction="previous">
@@ -61,7 +61,7 @@ export default function Projects() {
               </motion.div>
             </div>
 
-            <div className="flex flex-col justify-center items-start h-[20rem] lg:h-[45rem] p-[1rem] lg:py-[8rem]">
+            <div className="flex flex-col justify-center items-start h-[20rem] p-[1rem] lg:h-[25rem] xl:h-[30rem] xl:py-[4rem] 2xl:p-2 2xl:h-[40rem] 2xl:mt-0">
               <ProjectDescription>
                 {projects[projNumber].descriptionEng}
               </ProjectDescription>
@@ -74,9 +74,9 @@ export default function Projects() {
             </div>
           </div>
 
-          <div className="xl:flex flex-col justify-center items-center w-[50%] h-[80%] my-[auto] hidden">
+          <div className="xl:flex flex-col justify-center items-center w-[45%] h-[80%] my-[auto] hidden">
             <motion.div
-              className="overflow-hidden relative w-[50%] h-[10%] lg:w-[90%] lg:h-[60%] rounded-md"
+              className="overflow-hidden relative w-[50%] h-[10%] lg:w-[100%] lg:h-[60%] rounded-md"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 100, opacity: 0 }}
