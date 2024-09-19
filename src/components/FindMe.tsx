@@ -6,18 +6,20 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function FindMe() {
   return (
-    <div className="flex flex-col justify-start items-center w-[45%] h-full z-10">
+    <div className="flex flex-col justify-start items-center w-full h-full z-10 xl:w-[45%] ">
       <div className="mb-[4rem]">
-        <h2 className="bebas text-[8rem] font-bold mb-[-5.8rem]">Want to</h2>
-        <h2 className="bebas text-[8rem] font-bold mb-[-5.8rem]">
+        <h2 className="bebas text-[4.8rem] mb-[-3.5rem] xl:text-[8rem] font-bold xl:mb-[-5.8rem]">
+          Want to
+        </h2>
+        <h2 className="bebas text-[4.8rem] xl:text-[8rem] font-bold xl:mb-[-5.8rem]">
           contact{" "}
-          <span className="bebas text-[8rem] font-bold mb-[-5.8rem] text-purple-600">
+          <span className="bebas text-[4.8rem] xl:text-[8rem] font-bold xl:mb-[-5.8rem] text-purple-600">
             me
           </span>
           ?
         </h2>
       </div>
-      <div className="w-[60%]">
+      <div className="w-full pl-5 mt-[-3rem] xl:w-[60%] xl:pl-0 xl:mt-0">
         <LinkedinButton />
         <Github />
         <ExternalLink

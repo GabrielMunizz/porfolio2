@@ -12,7 +12,7 @@ export default function ContactMe() {
     <Container containerRef={contactMeRef}>
       <div className="flex flex-row relative justify-end items-center w-[100%] h-[100%]">
         <FindMe />
-        <div className="absolute left-0 inset-0 w-[60%]">
+        <div className="absolute left-0 inset-0 w-[60%] hidden lg:block">
           <Image
             className="rounded-md w-full h-full"
             src={bgImage}
