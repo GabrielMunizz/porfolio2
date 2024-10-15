@@ -1,3 +1,4 @@
+import DownloadCV from './DownloadCV';
 import ExternalLink from "./ExternalLink";
 import Github from "./Github";
 import LinkedinButton from "./LinkedinButton";
@@ -34,6 +35,7 @@ export default function FindMe() {
         >
           <FaWhatsapp className="text-[2.5rem] text-[#2cd16e] mr-4" />
         </ExternalLink>
+        <DownloadCV />
       </div>
     </div>
   );

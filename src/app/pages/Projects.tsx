@@ -1,7 +1,6 @@
 "use client";
 import LinkRender from "@/components/LinkRender";
 import ProjectDescription from "@/components/ProjectDescription";
-import Title from "@/components/Title";
 import { projects } from "@/utils/projects";
 import Image from "next/image";
 import { useContext, useState } from "react";

@@ -16,12 +16,11 @@ export default function Description() {
         </h3>
       </div>
       <p className="bebas text-[1.2rem] md:text-[1.5rem] lg:text-[1.3rem] md:leading-9">
-        Passionate about technology, music, and games, I also try my luck in the
+        Passionate about technology, music and games. I also try my luck in the
         kitchen on the weekends. Since I was a child, I’ve always loved games
-        and was curious about how they were made. When I studied Business
-        Administration, I wrote my graduation thesis on the marketing of video
-        games. After some time, I decided to go beyond curiosity and started
-        learning programming, eventually entering the web development field. I
+        and was curious about how they were made. When I went to college, I wrote my graduation thesis on marketing of video
+        games. Later, I decided to go further and started
+        to learn how to code, focusing on web development. I
         have experience in JavaScript (React, React Native, Node, Sequelize,
         Express) and Python (Django).
       </p>

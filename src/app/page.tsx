@@ -7,7 +7,6 @@ import Lenis from "@studio-freight/lenis";
 import { useEffect, useRef } from "react";
 import PortfolioContext from "./context/PortfolioContext";
 import ContactMe from "./pages/ContactMe";
-import useMeasure from "react-use-measure";
 
 export default function Home() {
   const homeRef = useRef<null | HTMLDivElement>(null);

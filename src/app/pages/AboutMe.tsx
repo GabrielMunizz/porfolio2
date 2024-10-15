@@ -1,13 +1,11 @@
 import Description from "@/components/Description";
-import DownloadCV from "@/components/DownloadCV";
 import Stacks from "@/components/Stacks";
 import Container from "@/components/Container";
 import { useContext } from "react";
 import PorfolioContext from "../context/PortfolioContext";
 import Image from "next/image";
-import myImage from "../../assets/image.png";
 import gridBG from "../../assets/grid.png";
-// COLOCAR TEXTO DESCRITIVO E STACKS ABAIXO DE ABOUT ME
+import colorPhoto from '../../assets/foto_port_filtro-fotor-bg-remover-20231017175655.png'
 
 export default function AboutMe() {
   const { homeRef } = useContext(PorfolioContext);
@@ -19,16 +17,18 @@ export default function AboutMe() {
           <Image className="w-full h-full" src={gridBG} alt="grid background" />
         </div>
       </div>
-      <div className="hidden xl:flex flex-col relative justify-start items-center w-[50%] h-full pl-[10%]">
+      <div className="hidden xl:flex flex-col relative justify-start items-center w-[50%] h-full pl-[10%] xl:pl-[0%] xl:pt-[0.6px] 2xl:pt-[0.3px]">
         <Image
-          className="md:rounded-[50%] md:w-[15rem] md:h-[14rem] md:mt-[1.5rem] md:z-10 md:object-cover"
-          src={myImage}
+          className="md:rounded-[50%] md:w-[15rem] md:h-[14rem] md:mt-[1.5rem] md:z-10 md:object-cover md:object-[center_30%] xl:rounded-[5px] xl:w-full xl:h-[100%] xl:mt-0 2xl:mr-[-6.2rem]"
+          src={colorPhoto}
           alt="Gabriel's picture"
+          
         />
+        <div className="hidden xl:block absolute inset-0 bg-gradient-to-r from-black via-black/10 2xl:via-black/60 to-transparent z-[15] xl:mt-[1px]" />
       </div>
       <Image
         className="absolute rounded-[50%] w-[7rem] h-[7rem] z-10 object-cover right-[5%] top-4 md:right-10 md:top-5 md:w-[15rem] md:h-[15rem] xl:hidden"
-        src={myImage}
+        src={colorPhoto}
         alt="Gabriel's picture"
       />
       <div className="md:flex flex-col justify-center items-start absolute w-full bottom-0 md:pl-4 2xl:pl-16 z-40 hidden">

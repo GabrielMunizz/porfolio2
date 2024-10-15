@@ -1,7 +1,14 @@
+import { MdDownload } from 'react-icons/md';
+
 const DownloadCV = () => {
   return (
-    <button className="rounded-2xl border-2 mb-[1rem] bg-black px-6 py-3 font-semibold uppercase text-white transition-all duration-300 hover:text-purple-600 hover:border-purple-600 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_blueviolet] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
-      <a href="../assets/Cv_Muniz.pdf" className="bebas text-[1.8rem]" download>
+    <button className="flex flex-row items-center bg-transparent text-white mt-[2rem] transition-all hover:text-purple-600 transition ease-in delay-50">
+      <MdDownload className="text-white text-[3rem] z-10 mr-2" />
+      <a
+        href="../assets/Cv_Muniz.pdf"
+        className="bebas flex flex-row items-center rounded-md px-2 text-[1.2rem] lg:text-[1.5rem]"
+        download
+      >
         Download CV
       </a>
     </button>

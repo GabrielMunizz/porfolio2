@@ -54,7 +54,7 @@ export default function Stacks() {
       <div className="w-full relative overflow-hidden h-[10rem]">
         <motion.div
           style={{ x: xTranslation }}
-          className="flex absolute left-0 gap-4"
+          className="flex absolute left-0 gap-4 z-10"
           ref={ref}
           onHoverStart={() => {
             setMustFinish(true);
@@ -69,6 +69,8 @@ export default function Stacks() {
             <LogoRender key={i} url={item.url} title={item.title} />
           ))}
         </motion.div>
+        <div className="absolute bg-gradient-to-r from-black via-black/80 to-transparent z-10 h-[70%] top-[10%] w-[10%]" />
+        <div className="absolute bg-gradient-to-l from-black via-black/80 to-transparent z-10 h-[70%] top-[10%] right-0 w-[10%]" />
       </div>
     </div>
   );
