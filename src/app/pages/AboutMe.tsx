@@ -31,7 +31,7 @@ export default function AboutMe() {
         src={colorPhoto}
         alt="Gabriel's picture"
       />
-      <div className="md:flex flex-col justify-center items-start absolute w-full bottom-0 md:pl-4 2xl:pl-16 z-40">
+      <div className="md:flex flex-col justify-center items-start absolute w-full bottom-0 2xl:pl-16 z-40">
         <Stacks />
       </div>
     </Container>
