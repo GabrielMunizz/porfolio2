@@ -1,17 +1,18 @@
-import rickAndMortyImg from "../assets/project-thumbs/rickAndMorty.png";
-import tunesImg from "../assets/project-thumbs/trybeTunes.png";
-import IBGEImg from "../assets/project-thumbs/IBGENews.png";
-import byteForBite from "../assets/project-thumbs/byte-for-bite.jpeg";
-import onlineStoreImg from "../assets/project-thumbs/OnlineStore.png";
+import rickAndMortyImg from '../assets/project-thumbs/rickAndMorty.png';
+import tunesImg from '../assets/project-thumbs/trybeTunes.png';
+import IBGEImg from '../assets/project-thumbs/IBGENews.png';
+import byteForBite from '../assets/project-thumbs/byte-for-bite.jpeg';
+import onlineStoreImg from '../assets/project-thumbs/OnlineStore.png';
+import myToDoImg from '../assets/project-thumbs/todo-image.png';
 
 export const projects = [
   {
     id: 0,
-    title: "Byte-for-Bite",
+    title: 'Byte-for-Bite',
     image: byteForBite,
-    categories: ["All", "Todas", "Full-Stack"],
-    url: "https://github.com/Wesleyhmendes/Byte-for-Bite/",
-    deploy: "https://byte-for-bite.up.railway.app/",
+    categories: ['All', 'Todas', 'Full-Stack'],
+    url: 'https://github.com/Wesleyhmendes/Byte-for-Bite/',
+    deploy: 'https://byte-for-bite.up.railway.app/',
     descriptionEng: `Byte-for-bite is a recipe web application. The user has access to hundreds of meal and drink recipes one click away.      
       After registering, the user can start a recipe and keep track of it, step-by-step. If there's some recipe you've liked or want to try later, you can favorite it.
       Also, you can change your profile picture. If you want to know which recipes you've already done, just access the Done Recipes page`,
@@ -21,11 +22,11 @@ export const projects = [
   },
   {
     id: 1,
-    title: "Online Store",
+    title: 'Online Store',
     image: onlineStoreImg,
-    categories: ["All", "Todas", "Front-End"],
-    url: "https://github.com/GabrielMunizz/OnlineStore",
-    deploy: "https://online-store-nine-omega.vercel.app/",
+    categories: ['All', 'Todas', 'Front-End'],
+    url: 'https://github.com/GabrielMunizz/OnlineStore',
+    deploy: 'https://online-store-nine-omega.vercel.app/',
     descriptionEng: `Online Store is a Front-End web application that uses Mercado Livre API products catalog.
       The objective is to simulate an e-commerce web site with shop cart, card validation and product review features.
       The application is responsive and have 90% test coverage`,
@@ -35,11 +36,11 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Rick and Mortypedia",
+    title: 'Rick and Mortypedia',
     image: rickAndMortyImg,
-    categories: ["All", "Todas", "Front-End"],
-    url: "https://github.com/GabrielMunizz/rick-and-morty",
-    deploy: "https://rick-and-morty-three-khaki.vercel.app/",
+    categories: ['All', 'Todas', 'Front-End'],
+    url: 'https://github.com/GabrielMunizz/rick-and-morty',
+    deploy: 'https://rick-and-morty-three-khaki.vercel.app/',
     descriptionEng: `My first personal project in React, using Rick and Morty's API. 
       The application consists in a Rick and Morty's 'Wikipedia' and includes a memory game.  
       React Router Dom, useState, useEffect, Styled-Components are some of the skills and technologies used in this project`,
@@ -49,11 +50,11 @@ export const projects = [
   },
   {
     id: 3,
-    title: "TrybeTunes",
+    title: 'TrybeTunes',
     image: tunesImg,
-    categories: ["All", "Todas", "Front-End"],
-    url: "https://github.com/GabrielMunizz/tunes",
-    deploy: "https://trybe-tunes-nine-sable.vercel.app/",
+    categories: ['All', 'Todas', 'Front-End'],
+    url: 'https://github.com/GabrielMunizz/tunes',
+    deploy: 'https://trybe-tunes-nine-sable.vercel.app/',
     descriptionEng: `This application in React uses the iTunes API. The user can search for 
       artists or bands, have access of all the albums infos and play music samples.
       Also, it includes a "Favorites" feature and a "My Profile" page so you can edit
@@ -65,11 +66,11 @@ export const projects = [
   },
   {
     id: 4,
-    title: "IBGE News",
+    title: 'IBGE News',
     image: IBGEImg,
-    categories: ["All", "Todas", "Front-End"],
-    url: "https://github.com/GabrielMunizz/IBGE_News",
-    deploy: "https://ibge-news-seven.vercel.app/",
+    categories: ['All', 'Todas', 'Front-End'],
+    url: 'https://github.com/GabrielMunizz/IBGE_News',
+    deploy: 'https://ibge-news-seven.vercel.app/',
     descriptionEng: `This application in React uses IBGE API. The user have access to recent news
     published in IBGE's web site. Have a "dark mode", "favorites" features and it's also possible to filter
     by "release" or "news". Also, the user can access a full version of the news or release
@@ -78,5 +79,19 @@ export const projects = [
     publicadas no site do IBGE. Possui um recurso de "dark mode", "favoritos" e é possível filtrar por "notícias" e 
     "releases". O usuário também pode acessar a versão completa da notícia ou release clicando
     no botão "Leia a notícia aqui"`,
+  },
+  {
+    id: 5,
+    title: 'My To-do',
+    image: myToDoImg,
+    categories: ['All', 'Todas', 'Front-End'],
+    url: 'https://github.com/GabrielMunizz/to-do',
+    deploy: 'https://gabrielmunizz.github.io/to-do/',
+    descriptionEng: `This is a front-end project built with Next.js and SCSS, 
+      offering a simple and intuitive to-do list application. Users can add tasks, 
+      delete them, and mark tasks as completed, which moves them to a dedicated 
+      'completed tasks' section. The application is fully responsive, 
+      ensuring an optimal experience on mobile devices.`,
+    descriptionPT: ``,
   },
 ];
