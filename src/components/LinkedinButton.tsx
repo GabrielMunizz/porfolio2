@@ -9,8 +9,8 @@ export default function LinkedinButton() {
         target="_blank"
       >
         <div className="relative rounded-lg mr-4 w-[2.5rem] h-[2.5rem]">
-          <div className="bg-[#fff] w-[80%] rounded-lg absolute top-1 right-1 h-[80%] z-0" />
-          <SiLinkedin className="text-[2.5rem] absolute text-[#0a6ac4] z-10" />
+          <div className="bg-[#fff] w-[95%] min-h-[85%] rounded-lg absolute top-1 left-0 h-[80%] z-0" />
+          <SiLinkedin className="text-[2.5rem] absolute right-[1%] text-[#0a6ac4] z-10" />
         </div>
         linkedin.com/in/gabriel-muniz-dev/
       </a>

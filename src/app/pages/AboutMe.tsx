@@ -24,7 +24,7 @@ export default function AboutMe() {
           alt="Gabriel's picture"
           
         />
-        <div className="hidden xl:block absolute left-0 w-[50%] h-full bg-gradient-to-r from-black via-black 2xl:via-black/80 to-transparent z-[15]" />
+        <div className="hidden xl:block absolute left-[-1%] 2xl:left-0 w-[50%] h-full bg-gradient-to-r from-black via-black xl:via-black/80 to-transparent z-[15]" />
       </div>
       <Image
         className="absolute rounded-[50%] w-[7rem] h-[7rem] z-10 object-cover right-[5%] top-4 md:right-10 md:top-5 md:w-[15rem] md:h-[15rem] xl:hidden"

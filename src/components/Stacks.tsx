@@ -70,7 +70,7 @@ export default function Stacks() {
           ))}
         </motion.div>
         <div className="absolute bg-gradient-to-r from-black via-black/80 to-transparent z-10 h-[70%] top-[10%] left-[-2%] w-[12%]" />
-        <div className="absolute bg-gradient-to-l from-black via-black/80 to-transparent z-10 h-[70%] top-[10%] right-[-2%] w-[12%]" />
+        <div className="absolute bg-gradient-to-l from-black via-black/80 to-transparent z-10 h-[70%] top-[10%] right-[-2%] md:right-[-3.5%] lg:right-[-2%] w-[12%]" />
       </div>
     </div>
   );
