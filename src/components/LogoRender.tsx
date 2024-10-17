@@ -11,7 +11,7 @@ export default function LogoRender({ url, title }: LogoRenderProps) {
   const [showOverlay, setShowOverlay] = useState(false);
   return (
     <motion.div
-      className="flex flex-col justify-center items-center relative min-w-[100px] min-h-[120px] my-[0.8rem]"
+      className="flex flex-col justify-center items-center relative min-w-[60px] min-h-[80px] md:min-w-[100px] md:min-h-[120px] my-[0.8rem]"
       onHoverStart={() => setShowOverlay(true)}
       onHoverEnd={() => setShowOverlay(false)}
     >
@@ -25,7 +25,7 @@ export default function LogoRender({ url, title }: LogoRenderProps) {
           >
             <div className="absolute bg-black pointer-events-none opacity-50 h-full w-full " />
             <motion.h1
-              className="bg-transparent text-white font-semibold text-[2rem] z-10 px-3 py-2 flex justify-center items-center"
+              className="bg-transparent text-white font-semibold text-[1.2rem] md:text-[2rem] z-10 px-3 py-2 flex justify-center items-center"
               initial={{ y: 10 }}
               animate={{ y: 0 }}
               exit={{ y: 10 }}
@@ -38,7 +38,7 @@ export default function LogoRender({ url, title }: LogoRenderProps) {
       <Image
         src={url}
         alt={`${title} logo`}
-        className="w-[100px] m-h-[100px]"
+        className="w-[60px] min-h-[60px] md:w-[100px] md:m-h-[100px]"
       />
     </motion.div>
   );

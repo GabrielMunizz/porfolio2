@@ -47,11 +47,11 @@ export default function Stacks() {
   }, [xTranslation, width, duration, rerender, mustFinish]);
 
   return (
-    <div className="flex flex-col justify-center items-start md:w-[98%] lg:w-[39rem] 2xl:w-[50rem] 2xl:mb-[2rem]">
-      <h2 className="bebas text-[3rem] text-center h-[4rem] lg:text-[2.5rem] lg:mb-[-2rem]">
+    <div className="flex flex-col justify-center items-center md:items-start md:w-[98%] lg:w-[39rem] 2xl:w-[50rem] 2xl:mb-[2rem]">
+      <h2 className="bebas hidden md:block text-[1.5rem] md:text-[3rem] text-center h-[4rem] lg:text-[2.5rem] lg:mb-[-2rem]">
         Stacks:
       </h2>
-      <div className="w-full relative overflow-hidden h-[10rem]">
+      <div className="w-[99%] md:w-full relative overflow-hidden h-[8rem] md:h-[10rem]">
         <motion.div
           style={{ x: xTranslation }}
           className="flex absolute left-0 gap-4 z-10"
@@ -69,8 +69,8 @@ export default function Stacks() {
             <LogoRender key={i} url={item.url} title={item.title} />
           ))}
         </motion.div>
-        <div className="absolute bg-gradient-to-r from-black via-black/80 to-transparent z-10 h-[70%] top-[10%] w-[10%]" />
-        <div className="absolute bg-gradient-to-l from-black via-black/80 to-transparent z-10 h-[70%] top-[10%] right-0 w-[10%]" />
+        <div className="absolute bg-gradient-to-r from-black via-black/80 to-transparent z-10 h-[70%] top-[10%] left-[-2%] w-[12%]" />
+        <div className="absolute bg-gradient-to-l from-black via-black/80 to-transparent z-10 h-[70%] top-[10%] right-[-2%] w-[12%]" />
       </div>
     </div>
   );
