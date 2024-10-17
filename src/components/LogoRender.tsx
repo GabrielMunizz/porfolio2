@@ -38,7 +38,7 @@ export default function LogoRender({ url, title }: LogoRenderProps) {
       <Image
         src={url}
         alt={`${title} logo`}
-        className="w-[60px] min-h-[60px] md:w-[100px] md:m-h-[100px]"
+        className="w-[60px] min-h-[60px] h800:min-w-[80px] h800:min-h-[80px] md:w-[100px] md:m-h-[100px]"
       />
     </motion.div>
   );
