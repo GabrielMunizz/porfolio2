@@ -20,7 +20,7 @@ export default function FindMe() {
           ?
         </h2>
       </div>
-      <div className="w-full pl-5 mt-[-3rem] xl:w-[60%] xl:pl-0 xl:mt-0">
+      <div className="md:pl-5 mt-[-3rem] xl:w-[60%] xl:pl-0 xl:mt-0">
         <LinkedinButton />
         <Github />
         <ExternalLink
