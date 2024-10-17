@@ -51,7 +51,7 @@ export default function Stacks() {
       <h2 className="bebas hidden md:block text-[1.5rem] md:text-[3rem] text-center h-[4rem] lg:text-[2.5rem] lg:mb-[-2rem]">
         Stacks:
       </h2>
-      <div className="w-[99%] md:w-full relative overflow-hidden h-[7.5rem] md:h-[10rem]">
+      <div className="w-[99%] md:w-full relative overflow-hidden h-[7rem] md:h-[10rem]">
         <motion.div
           style={{ x: xTranslation }}
           className="flex absolute left-0 gap-4 z-10"

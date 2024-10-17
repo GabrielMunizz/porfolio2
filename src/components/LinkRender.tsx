@@ -13,7 +13,7 @@ export default function LinkRender({ children, category }: LinkRenderProps) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         key={category}
-        className="bebas text-[1rem] md:text-[1.5rem] 2xl:text-[2rem] text-purple-600"
+        className="bebas text-[0.95rem] md:text-[1.5rem] 2xl:text-[2rem] text-purple-600"
       >
         {`${category}:`}
       </motion.p>
@@ -22,7 +22,7 @@ export default function LinkRender({ children, category }: LinkRenderProps) {
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
         key={children}
-        className="bebas text-[1rem] md:text-[1.5rem] 2xl:text-[2rem] ml-[5px]"
+        className="bebas text-[0.95rem] md:text-[1.5rem] 2xl:text-[2rem] ml-[5px]"
         href={children}
         target="_blank"
       >

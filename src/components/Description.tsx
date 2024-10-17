@@ -1,5 +1,3 @@
-import Image from "next/image";
-import myImage from "../assets/image.png";
 
 export default function Description() {
   return (

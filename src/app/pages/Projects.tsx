@@ -42,7 +42,7 @@ export default function Projects() {
               </ProjectButton>
             </div>
 
-            <div className="flex flex-col items-center w-full h-[30%] md:h-[40%] my-[auto] xl:hidden my-[-2rem]">
+            <div className="flex flex-col items-center w-full h-[30%] md:h-[40%] my-[auto] xl:hidden">
               <motion.div
                 className="overflow-hidden relative w-[90%] h-full lg:w-[90%] lg:h-[60%] rounded-md"
                 initial={{ y: 100, opacity: 0 }}
