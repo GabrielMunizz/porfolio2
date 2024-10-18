@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       screens: {
-        'h800': {'raw': '(min-height: 800px)'}
+        'h800': {'raw': '(min-height: 800px) and (max-height: 875px)'}
       }
     },
   },
