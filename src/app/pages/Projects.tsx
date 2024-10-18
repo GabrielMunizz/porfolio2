@@ -60,7 +60,7 @@ export default function Projects() {
               </motion.div>
             </div>
 
-            <div className="flex flex-col justify-start items-start h-[20rem] p-[1rem] lg:h-[25rem] xl:h-[30rem] xl:py-[4rem] 2xl:p-2 2xl:h-[24rem] 2xl:mt-[5rem]">
+            <div className="flex flex-col justify-start items-start h-[20rem] p-[1rem] lg:h-[25rem] lg:mt-[5rem] xl:h-[30rem] xl:py-[4rem] 2xl:p-2 2xl:h-[24rem] 2xl:mt-[8rem]">
               <ProjectDescription>
                 {projects[projNumber].descriptionEng}
               </ProjectDescription>
@@ -75,7 +75,7 @@ export default function Projects() {
 
           <div className="xl:flex flex-col justify-center items-center w-[50%] h-[80%] my-[auto] hidden">
             <motion.div
-              className="overflow-hidden relative w-[50%] h-[10%] lg:w-[100%] lg:h-[60%] rounded-md"
+              className="overflow-hidden relative w-[50%] h-[10%] lg:w-[90%] lg:h-[60%]"
               initial={{ y: 100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               exit={{ y: 100, opacity: 0 }}
