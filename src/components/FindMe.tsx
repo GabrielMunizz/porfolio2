@@ -7,33 +7,59 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function FindMe() {
   return (
-    <div className="flex flex-col justify-start items-center w-full h-full z-10 xl:w-[45%] ">
+    <div
+      className="
+        flex flex-col justify-start items-center 
+        w-full h-full z-10 
+        xl:w-[45%]
+      "
+    >
       <div className="mb-[1rem] md:mb-[4rem]">
-        <h2 className="bebas text-[4.5rem] mb-[-3.3rem] xl:text-[8rem] font-bold xl:mb-[-5.8rem]">
+        <h2
+          className="
+            bebas text-[4.5rem] mb-[-3.3rem] 
+            md:text-[8rem] font-bold md:mb-[-5.8rem]
+          "
+        >
           Want to
         </h2>
-        <h2 className="bebas text-[4.5rem] xl:text-[8rem] font-bold xl:mb-[-5.8rem]">
+        <h2
+          className="
+            bebas text-[4.5rem] md:text-[8rem] 
+            font-bold md:mb-[-5.8rem]
+          "
+        >
           contact{" "}
-          <span className="bebas text-[4.5rem] xl:text-[8rem] font-bold xl:mb-[-5.8rem] text-purple-600">
+          <span
+            className="
+              bebas text-[4.5rem] md:text-[8rem] 
+              font-bold md:mb-[-5.8rem] text-purple-600
+            "
+          >
             me
           </span>
           ?
         </h2>
       </div>
-      <div className="md:pl-5 mt-[-3rem] xl:w-[60%] xl:pl-0 xl:mt-0">
+      <div
+        className="
+          md:pl-5 mt-[-3rem] h800:mt-0 
+          xl:w-[60%] xl:pl-0 xl:mt-0
+        "
+      >
         <LinkedinButton />
         <Github />
         <ExternalLink
           text="gabrielmfd@gmail.com"
           link="mailto:gabrielmfd@gmail.com"
         >
-          <CiMail className="text-[2.5rem] text-white mr-4" />
+          <CiMail className="text-[2.5rem] md:text-[3.5rem] text-white mr-4" />
         </ExternalLink>
         <ExternalLink
           text="+55(32) 984863437"
           link="https://api.whatsapp.com/send?phone=5532984863437"
         >
-          <FaWhatsapp className="text-[2.5rem] text-[#2cd16e] mr-4" />
+          <FaWhatsapp className="text-[2.5rem] md:text-[3.5rem] text-[#2cd16e] mr-4" />
         </ExternalLink>
         <DownloadCV />
       </div>
