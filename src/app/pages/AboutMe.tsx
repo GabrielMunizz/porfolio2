@@ -47,19 +47,23 @@ export default function AboutMe() {
             md:z-10 md:object-cover 
             md:object-[center_30%] 
             xl:rounded-[5px] xl:w-full 
-            xl:h-[100%] xl:mt-0 
+            xl:h-full xl:mt-0  
             2xl:mr-[-6.2rem]
           "
           src={colorPhoto}
           alt="Gabriel's picture"
         />
         <div className="
-            hidden xl:block absolute 
-            left-[-1%] 2xl:left-0 
+            hidden absolute 
+            left-[-1%] 
             w-[50%] h-full 
             bg-gradient-to-r from-black 
-            via-black xl:via-black/80 
+            via-black  
             to-transparent z-[15]
+            xl:block xl:via-black/80
+            xl:h-[99.9%]
+            2xl:left-0 2xl:h-full
+            
           " 
         />
       </div>

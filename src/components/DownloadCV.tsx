@@ -15,8 +15,10 @@ const DownloadCV = () => {
       <MdDownload
         className="
           text-white text-[3rem] 
-          md:text-[4.5rem] 
           z-10 mr-2
+          md:text-[4.5rem]          
+          xl:text-[2.5rem]
+          2xl:text-[3.5rem] 
         "
       />
       <a
@@ -24,9 +26,12 @@ const DownloadCV = () => {
         className="
           bebas flex flex-row items-center 
           rounded-md px-2 
-          text-[1.2rem] md:text-[2.5rem] 
           hover:text-purple-600 
           transition ease-in delay-50
+          text-[1.2rem] 
+          md:text-[2.5rem]
+          xl:text-[1.5rem]
+          2xl:text-[2.2rem] 
         "
         download
       >

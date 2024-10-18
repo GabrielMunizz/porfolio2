@@ -24,9 +24,12 @@ export default function ExternalLink({
         className="
           bebas flex flex-row items-center 
           rounded-md px-2 
-          text-[1.2rem] md:text-[2.5rem] 
+          text-[1.2rem]
           hover:text-purple-600 
           transition ease-in delay-50
+          md:text-[2.5rem]
+          xl:text-[1.5rem]
+          2xl:text-[2.2rem]
         "
         href={link}
         target="_blank"
