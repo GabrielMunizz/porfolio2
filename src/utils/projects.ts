@@ -1,4 +1,3 @@
-import rickAndMortyImg from '../assets/project-thumbs/rickAndMorty.png';
 import tunesImg from '../assets/project-thumbs/trybeTunes.png';
 import IBGEImg from '../assets/project-thumbs/IBGENews.png';
 import byteForBite from '../assets/project-thumbs/byte-for-bite.jpeg';
@@ -36,18 +35,18 @@ export const projects = [
   },
   {
     id: 2,
-    title: 'Rick and Mortypedia',
-    image: rickAndMortyImg,
+    title: 'My To-do',
+    image: myToDoImg,
     categories: ['All', 'Todas', 'Front-End'],
-    url: 'https://github.com/GabrielMunizz/rick-and-morty',
-    deploy: 'https://rick-and-morty-three-khaki.vercel.app/',
-    descriptionEng: `My first personal project in React, using Rick and Morty's API. 
-      The application consists in a Rick and Morty's 'Wikipedia' and includes a memory game.  
-      React Router Dom, useState, useEffect, Styled-Components are some of the skills and technologies used in this project`,
-    descriptionPT: `Meu primeiro projeto pessoal em React, consumindo a API do Rick and Morty.
-      A aplicação consiste em uma Wikipédia do Rick and Morty e inclui um jogo da memória.
-      Algumas dos técnologias e hooks usados foram React Router Dom, useState, useEffect e Styled-Components`,
-  },
+    url: 'https://github.com/GabrielMunizz/to-do',
+    deploy: 'https://gabrielmunizz.github.io/to-do/',
+    descriptionEng: `This is a front-end project built with Next.js and SCSS, 
+      offering a simple and intuitive to-do list application. Users can add tasks, 
+      delete them, and mark tasks as completed, which moves them to a dedicated 
+      'completed tasks' section. The application is fully responsive, 
+      ensuring an optimal experience on mobile devices.`,
+    descriptionPT: ``,
+  },  
   {
     id: 3,
     title: 'TrybeTunes',
@@ -79,19 +78,5 @@ export const projects = [
     publicadas no site do IBGE. Possui um recurso de "dark mode", "favoritos" e é possível filtrar por "notícias" e 
     "releases". O usuário também pode acessar a versão completa da notícia ou release clicando
     no botão "Leia a notícia aqui"`,
-  },
-  {
-    id: 5,
-    title: 'My To-do',
-    image: myToDoImg,
-    categories: ['All', 'Todas', 'Front-End'],
-    url: 'https://github.com/GabrielMunizz/to-do',
-    deploy: 'https://gabrielmunizz.github.io/to-do/',
-    descriptionEng: `This is a front-end project built with Next.js and SCSS, 
-      offering a simple and intuitive to-do list application. Users can add tasks, 
-      delete them, and mark tasks as completed, which moves them to a dedicated 
-      'completed tasks' section. The application is fully responsive, 
-      ensuring an optimal experience on mobile devices.`,
-    descriptionPT: ``,
-  },
+  },  
 ];
