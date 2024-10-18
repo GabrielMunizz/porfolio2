@@ -95,7 +95,7 @@ export default function Projects() {
                 h-[20rem] p-[1rem] 
                 lg:h-[25rem] lg:mt-[5rem] 
                 xl:h-[30rem] xl:py-[4rem] 
-                2xl:p-2 2xl:h-[24rem] 2xl:mt-[8rem]
+                2xl:p-2 2xl:h-[24rem] 2xl:mt-[8rem]                
               "
             >
               <ProjectDescription>
